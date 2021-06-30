@@ -123,7 +123,19 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--secondary-font-color);
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
+  fill: var(--accent-color);
+}
+
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -147,7 +159,19 @@ body {
 
 /*====HERO====*/
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--secondary-background-color);
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 200px 0;
 }
@@ -193,6 +217,10 @@ body {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.advantages-icon {
+  margin-bottom: 30px;
 }
 
 .advantages-item {
@@ -276,7 +304,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-
 .team-name {
   margin-bottom: 10px;
   font-family: Roboto;
@@ -293,6 +320,49 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+
+/*====CLIENTS====*/
+
+.clients-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+
+.clients-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clients-link {
+  display: block;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-icon {
+  fill: #AFB1B8;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color)
 }
 
 /*====PORTFOLIO====*/
