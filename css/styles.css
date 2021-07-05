@@ -223,17 +223,21 @@ body {
   margin-top: -30px;
 }
 
-.advantages-icon-container {
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  background-color: var(--main-background-color);
-  border-radius: 4px;
-}
-
 .advantages-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+
+.advantages-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--main-background-color);
+  border-radius: 4px;
 }
 
 .advantages-title {
@@ -336,10 +340,11 @@ body {
 }
 
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   fill: #AFB1B8;
   background-color: #FFFFFF;
@@ -382,15 +387,15 @@ body {
 
 .clients-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  padding: 16px 30px;
 }
 
 .clients-icon {
   fill: #AFB1B8;
-  justify-content: center;
-  align-items: center;
 }
 
 
